@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #080b14;
+  color: #f4f6ff;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 7%;
+  border-bottom: 1px solid #202638;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.logo span,
+.hero h1 span {
+  color: #68a5ff;
+}
+
+.nav-link {
+  color: #b9c5dc;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.hero {
+  min-height: 430px;
+  padding: 90px 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.eyebrow {
+  color: #68a5ff;
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 9vw, 65px);
+  line-height: 1.15;
+  letter-spacing: -2px;
+}
+
+.description {
+  color: #a9b4ca;
+  max-width: 450px;
+  margin: 20px 0 28px;
+}
+
+.button {
+  display: inline-block;
+  background: #68a5ff;
+  color: #080b14;
+  padding: 12px 19px;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 13px;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.section {
+  padding: 55px 7%;
+  border-top: 1px solid #202638;
+}
+
+.section h2 {
+  font-size: 27px;
+  margin-bottom: 14px;
+}
+
+.muted {
+  color: #a9b4ca;
+  font-size: 14px;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid #202638;
+}
+
+.project > span {
+  color: #68a5ff;
+}
+
+.project div {
+  flex: 1;
+}
+
+.project h3 {
+  font-size: 16px;
+}
+
+.contact .button {
+  margin-top: 22px;
+}
+
+footer {
+  padding: 25px 7%;
+  border-top: 1px solid #202638;
+  color: #8490a8;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  .hero {
+    min-height: 550px;
+  }
+
+  .section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+	
+nav a, .hero a { color: #f4f6ff; text-decoration: none; margin-left: 14px; }
+nav a.active { color: #60a5fa; }
+.reveal { opacity: 0; transform: translateY(30px); transition: 0.7s; }
+.reveal.show { opacity: 1; transform: none; }
